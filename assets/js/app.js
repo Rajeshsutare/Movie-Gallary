@@ -89,6 +89,7 @@ const onMovieSubmit = (eve) =>{
     templating(movieArray);
     localStorage.setItem('movieForm',JSON.stringify(movieArray))
     cl(movieArray)
+    alert("New Movie Added...!")
 }
 
 
@@ -109,6 +110,7 @@ const onDeleteBtn = (eve) =>{
     movieArray.splice(deleteIndx,1);
     localStorage.setItem('movieForm',JSON.stringify(movieArray))
     templating(movieArray)
+    alert("Movie Deleted successfully...!!!")
 }
 
 
